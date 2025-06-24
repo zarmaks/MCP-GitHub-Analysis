@@ -62,3 +62,9 @@ coverage.xml
 
 # Windows
 Thumbs.db
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
