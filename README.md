@@ -57,14 +57,3 @@ python server.py
 ```bash
 streamlit run demo.py
 ```
-
-## Example Screenshots
-
-- ![Portfolio Analysis Screenshot](https://user-images.githubusercontent.com/your-username/portfolio-analysis.png)
-- ![Repo Analysis Screenshot](https://user-images.githubusercontent.com/your-username/repo-analysis.png)
-
-## Credits
-- Built with [PyGithub](https://pygithub.readthedocs.io/), [Streamlit](https://streamlit.io/), [python-dotenv](https://pypi.org/project/python-dotenv/)
-
-## License
-MIT
