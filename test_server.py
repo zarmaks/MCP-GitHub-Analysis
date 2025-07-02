@@ -6,6 +6,7 @@ import asyncio
 from tools import (
     analyze_portfolio,
     analyze_specific_repo,
+    analyze_specific_repo_enhanced,
     suggest_improvements,
     find_learning_path
 )
@@ -29,6 +30,20 @@ async def test_all_tools():
         result = await analyze_specific_repo("Lightly-GPT")
         print(f"✅ Analyzed {result['repo_name']}")
         print(f"   Type: {result['project_type']}")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+
+    # Test 2b: Enhanced Repo Analysis
+    print("\n2b. Testing Enhanced Repo Analysis...")
+    try:
+        result = await analyze_specific_repo_enhanced("Lightly-GPT")
+        if 'error' in result:
+            print(f"❌ Error: {result['error']}")
+        else:
+            print(f"✅ Enhanced analysis for {result['basic_info']['name']}")
+            print(f"   Quality Score: {result['quality_metrics']['quality_score']}/100")
+            print(f"   Project Type: {result['project_type']}")
+            print(f"   Suggestions: {len(result['suggestions'])}")
     except Exception as e:
         print(f"❌ Error: {e}")
     
