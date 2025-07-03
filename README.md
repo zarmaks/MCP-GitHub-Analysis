@@ -87,6 +87,7 @@ In the era of AI-driven development, **Model Context Protocol (MCP)** represents
 
 ```bash
 # Clone the repository
+<<<<<<< HEAD
 git clone https://github.com/zarmaks/github-portfolio-mcp.git
 cd github-portfolio-mcp
 
@@ -120,6 +121,33 @@ Note: No `.env` file is required - the application reads directly from environme
 
 ### Running the Application
 
+=======
+git clone https://github.com/zarmaks/MCP-on-GitHub-Portfolio.git
+cd MCP-on-GitHub-Portfolio
+
+# Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure environment
+cp .env.example .env
+# Edit .env with your GitHub credentials
+```
+
+### Configuration
+
+Create a `.env` file with:
+```env
+GITHUB_TOKEN=your_github_personal_access_token
+GITHUB_USERNAME=your_github_username
+```
+
+### Running the Application
+
+>>>>>>> 25160110c0174944a114b3ed23db601694db0dcb
 #### MCP Server Mode
 ```bash
 python server.py
@@ -136,6 +164,7 @@ streamlit run demo.py
 ![Portfolio Overview](docs/images/portfolio-overview.png)
 *Comprehensive visualization of your GitHub activity and language distribution*
 
+<<<<<<< HEAD
 ### Repository Analysis
 ![Code Quality](docs/images/repository-code-quality.png)
 *Automated assessment of code quality, including linting and style checks*
@@ -150,6 +179,12 @@ streamlit run demo.py
 ![Suggestions](docs/images/suggestions.png)
 *AI-powered recommendations for enhancing your repositories*
 
+=======
+### Improvement Suggestions
+![Suggestions](docs/images/suggestions.png)
+*AI-powered recommendations for enhancing your repositories*
+
+>>>>>>> 25160110c0174944a114b3ed23db601694db0dcb
 ### Learning Path
 ![Learning Path](docs/images/learning-path.png)
 *Personalized roadmap based on your target role*
@@ -183,6 +218,7 @@ async def analyze_portfolio(username: str) -> dict:
 3. **Team Leads**: Assess team members' skill distributions
 4. **Educators**: Track student progress and suggest learning materials
 
+<<<<<<< HEAD
 
 ### Development Setup
 ```bash
@@ -195,6 +231,23 @@ python test_server.py
 # Run debug/improvement tests
 python debug_test.py
 python test_improvements.py
+=======
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Setup
+```bash
+# Install development dependencies
+pip install -r requirements-dev.txt
+
+# Run tests
+pytest tests/
+
+# Code formatting
+black .
+flake8 .
+>>>>>>> 25160110c0174944a114b3ed23db601694db0dcb
 ```
 
 ## 🗺️ Roadmap
@@ -206,7 +259,11 @@ python test_improvements.py
 
 ## 📝 License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License. Please add a LICENSE file to the repository for full license details.
+=======
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+>>>>>>> 25160110c0174944a114b3ed23db601694db0dcb
 
 ## 🙏 Acknowledgments
 
@@ -218,7 +275,11 @@ This project is licensed under the MIT License. Please add a LICENSE file to the
 
 **Zarmaks** - [GitHub Profile](https://github.com/zarmaks)
 
+<<<<<<< HEAD
 Project Link: [https://github.com/zarmaks/github-portfolio-mcp](https://github.com/zarmaks/github-portfolio-mcp)
+=======
+Project Link: [https://github.com/zarmaks/MCP-on-GitHub-Portfolio](https://github.com/zarmaks/MCP-on-GitHub-Portfolio)
+>>>>>>> 25160110c0174944a114b3ed23db601694db0dcb
 
 ---
 
@@ -227,7 +288,13 @@ Project Link: [https://github.com/zarmaks/github-portfolio-mcp](https://github.c
 </p>
 
 <p align="center">
+<<<<<<< HEAD
   <a href="https://github.com/zarmaks/github-portfolio-mcp/stargazers">⭐ Star this project</a> • 
   <a href="https://github.com/zarmaks/github-portfolio-mcp/issues">🐛 Report Bug</a> • 
   <a href="https://github.com/zarmaks/github-portfolio-mcp/issues">✨ Request Feature</a>
+=======
+  <a href="https://github.com/zarmaks/MCP-on-GitHub-Portfolio/stargazers">⭐ Star this project</a> • 
+  <a href="https://github.com/zarmaks/MCP-on-GitHub-Portfolio/issues">🐛 Report Bug</a> • 
+  <a href="https://github.com/zarmaks/MCP-on-GitHub-Portfolio/issues">✨ Request Feature</a>
+>>>>>>> 25160110c0174944a114b3ed23db601694db0dcb
 </p>
