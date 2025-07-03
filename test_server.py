@@ -52,7 +52,7 @@ async def test_all_tools():
     try:
         result = await suggest_improvements()
         print(f"✅ Got {result['total_suggestions']} suggestions")
-        print(f"   Score: {result['portfolio_score']}/100")
+        print(f"   Score: {result['total_score']}/{result['max_possible_score']}")
     except Exception as e:
         print(f"❌ Error: {e}")
     
