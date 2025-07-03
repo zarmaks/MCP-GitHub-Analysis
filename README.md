@@ -119,7 +119,6 @@ export GITHUB_TOKEN=your_github_personal_access_token
 Note: No `.env` file is required - the application reads directly from environment variables.
 
 ### Running the Application
-
 #### MCP Server Mode
 ```bash
 python server.py
@@ -132,6 +131,9 @@ streamlit run demo.py
 
 ## 📸 Demo Screenshots
 
+<details>
+<summary>🖼️ Click to view demo screenshots</summary>
+
 ### Portfolio Analysis
 ![Portfolio Overview](docs/images/portfolio-overview.png)
 *Comprehensive visualization of your GitHub activity and language distribution*
@@ -139,20 +141,25 @@ streamlit run demo.py
 ### Repository Analysis
 ![Code Quality](docs/images/repository-code-quality.png)
 *Automated assessment of code quality, including linting and style checks*
+
 ![Insights](docs/images/repository-insights.png)
-*Detailed insights into repository health and activity patterns*    
+*Detailed insights into repository health and activity patterns*
 
 ### Improvement Suggestions
 ![Score Breakdown](docs/images/score-breakdown.png)
 *Detailed breakdown of improvement areas with actionable suggestions*
+
 ![Strengths](docs/images/strengths.png)
 *Highlighting your strengths and areas for growth*
+
 ![Suggestions](docs/images/suggestions.png)
 *AI-powered recommendations for enhancing your repositories*
 
 ### Learning Path
 ![Learning Path](docs/images/learning-path.png)
 *Personalized roadmap based on your target role*
+
+</details>
 
 ## 🔧 MCP Integration
 
@@ -182,7 +189,6 @@ async def analyze_portfolio(username: str) -> dict:
 2. **Developers**: Identify areas for improvement in your projects
 3. **Team Leads**: Assess team members' skill distributions
 4. **Educators**: Track student progress and suggest learning materials
-
 
 ### Development Setup
 ```bash
